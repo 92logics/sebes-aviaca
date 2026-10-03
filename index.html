@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AVIACA — scripted prototype · 92 Logics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">92</div>
+        <div>
+          <h1 data-i18n="title">AVIACA — asistent scriptat</h1>
+          <p class="sub" data-i18n="subtitle"></p>
+          <div class="badges">
+            <span class="badge" data-i18n="badgeScript"></span>
+            <span class="badge warn" data-i18n="badgeNot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="lang-ro" aria-pressed="true">RO</button>
+        <button type="button" id="lang-en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <aside class="card">
+        <div class="side">
+          <h2 data-i18n="noticeHead"></h2>
+          <p class="fact"><strong data-i18n="lblBuyer"></strong><span data-i18n="valBuyer"></span></p>
+          <p class="fact"><strong data-i18n="lblNotice"></strong><span><a href="https://e-licitatie.ro/pub/notices/c-notice/v2/view/100212215">e-licitatie.ro · 100212215</a></span></p>
+          <p class="fact"><strong data-i18n="lblRef"></strong><span>2026/43291/1</span></p>
+          <p class="fact"><strong data-i18n="lblDeadline"></strong><span>21.10.2026, 15:00</span></p>
+          <p class="fact"><strong data-i18n="lblContact"></strong><span>Daniel Toma Irimie<br>daniel.irimie@primariasebes.ro<br>+40 753834217</span></p>
+          <p class="fact"><strong data-i18n="lblValue"></strong><span data-i18n="valValue"></span></p>
+        </div>
+        <div class="sources">
+          <h2 data-i18n="srcHead"></h2>
+          <ul>
+            <li><a href="https://www.licitatii-publice.ro/licitatie/CN1096592-servicii-dezvoltare-solutiei-it-active-necorporale-instruire-personal">CN1096592 notice mirror</a></li>
+            <li><a href="https://ro.openprocurements.com/tender/servicii-de-dezvoltare-a-solutiei-it-active-necorporale-instruire-personal-in-cadrul-proiectului-seb/">OpenProcurements mirror</a></li>
+            <li><a href="https://www.primariasebes.ro/contact/">primariasebes.ro/contact</a></li>
+            <li><a href="https://www.primariasebes.ro/acte-si-formulare/">Acte și formulare</a></li>
+            <li><a href="https://www.primariasebes.ro/e-administratie/spclep/stare-civila/">Stare civilă</a></li>
+            <li><a href="https://www.primariasebes.ro/programari-online/">Programări online</a></li>
+            <li><a href="https://taxe.primariasebes.ro/index.php">taxe.primariasebes.ro</a></li>
+            <li><a href="https://vintudejos.ro/">vintudejos.ro</a></li>
+            <li><a href="https://vintudejos.ro/contact/">vintudejos.ro/contact</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="card chat" aria-label="Scripted assistant">
+        <div class="log" id="log" role="log" aria-live="polite"></div>
+        <div class="chips" id="chips"></div>
+        <form class="composer" id="form">
+          <input id="q" type="text" autocomplete="off" data-i18n-placeholder="placeholder">
+          <button type="submit" data-i18n="send"></button>
+        </form>
+      </section>
+    </div>
+
+    <p class="foot">Prototype by 92 Logics · cowork@92logics.com · not an official city system.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
